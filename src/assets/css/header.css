@@ -1,0 +1,217 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:14px;
+  background: #f8f8f7;
+}
+ul,li,p{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a{text-decoration: none;}
+.clearfix{ clear: both;}
+.clearfix:after{
+content: "";
+display: block;
+clear: both;
+}
+.left{float: left;}
+*{box-sizing: border-box;}
+
+#header{
+  width:100%;
+  background:#fff;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:99;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+/* 导航栏 */
+#header .nav{
+  width:1000px;
+  height:60px;
+  padding:15px 0;
+  margin:0 auto;
+  
+}
+/* logo */
+.logo>img{
+  height:30px;
+  vertical-align: bottom;
+}
+/* 导航列表 */
+.ul_nav{
+  float: left;
+  margin-left:32px;
+}
+.ul_nav li{
+  float: left;
+  margin-right:24px;
+  line-height: 35px;
+}
+.ul_nav li>a,.perinfo>a{
+  font-size:15px;
+  color:#000;
+}
+.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover,.ctab a:hover,.citem>div>a:hover{
+  color:#FFB31A;
+}
+.ul_nav li.act>a{
+  color:#FFB31A;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFB31A;
+}
+/* 菜谱旁边图标 */
+.nass{
+  width:12px;
+  height:6px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../image/more1-1.png)
+}
+/* 菜谱隐藏 */
+.ctip{
+  width:492px;
+  height:380px;
+  background-color:#fff;
+  position: absolute;
+  top:45px;
+  left:-162px;
+  z-index: 99;
+  padding:0 16px;
+  box-shadow:0 2px 5px 0 rgba(64,71,81,0.10);
+  font-size:14px;
+  text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.arwwj{
+  height: 15px;
+  width: 492px;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -15px;
+}
+.ctab{
+  line-height: 55px;
+}
+.ctab a{
+  display: inline-block;
+  color:#383830;
+  margin-right:43px;
+}
+.ctab a img{
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.citem{
+  border-top:1px solid #E5E3DF;
+}
+.citem>span{
+  float: left;
+  width:64px;
+  text-align: center;
+  font-weight: bold;
+  color:#333;
+  line-height: 46px;
+  margin-right:16px;
+} 
+.citem>div{
+  width:380px;
+  float: left;
+}
+.citem>div>a{
+  width:95px;
+  line-height: 46px;
+  display: inline-block;
+  color:#333;
+}
+.citem>div>a:last-child{
+  color:#256DC6;
+}
+.citem>div>a:last-child img,.cmore a>img{
+  vertical-align: middle;
+  position: relative;
+  top:-1px;
+  height:12px;
+}
+.cmore{
+  text-align: center;
+}
+.cmore a{
+  color:#256DC6;
+}
+/* 搜索 */
+.search{
+  float: left;
+  position: relative;
+  height: 30px;
+}
+.search>input{
+  float: left;
+  width:182px;
+  height:30px;
+  padding:7px 10px;
+  font-size:12px;
+  color:#999;
+  background: #F7F7F7;
+  border:0;
+  outline: 0;
+  border-top-left-radius:4px;
+  border-bottom-left-radius: 4px;
+}
+.sear{
+  float: left;
+  width:38px;
+  height:30px;
+  background: #eee url(../image/search.png) no-repeat center center ;
+  border:0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* 发布 */
+.pubt{
+  margin-left:15px;
+  float: left;
+  position: relative;
+}
+.pubt>a{
+  width:60px;
+  height:30px;
+  display: block;
+  background: #FFB31A;
+  text-align: center;
+  line-height: 30px;
+  font-size:14px;
+  color:#fff;
+  border-radius: 4px;
+}
+/* 发布隐藏的 */
+.pubt-box{
+  width:130px;
+  background:#fff;
+  position: absolute;
+  top:45px;
+  left:-35px;
+  box-shadow:0 0 5px 0 rgba(64,71,81,0.10);
+  padding:8px;
+  border-radius: 5px;
+}
+.pubt-box>a{
+  display: block;
+  line-height: 30px;
+  font-size:13px;
+  color:#333;
+}
+/* 登录 */
+.perinfo{
+  float: left;
+  margin-left:40px;
+  height: 30px;
+  line-height: 30px;
+}

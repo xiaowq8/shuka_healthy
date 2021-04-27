@@ -1,0 +1,338 @@
+ul,li,p{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a{text-decoration: none;  color:#333;}
+.clearfix{ clear: both;}
+.clearfix:after{
+content: "";
+display: block;
+clear: both;
+}
+#i_content{
+  width:1000px;
+  margin:0 auto;
+}
+/* 精选菜谱 */
+.i_title{
+  font-size:20px;
+  font-weight: bold;
+  margin-top:100px;
+  line-height: 20px;
+  text-align: left;
+  color:#333;
+}
+.i_title a{
+  float: right;
+  font-size:13px;
+  color:#256DC6;
+  height:20px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.recipes{
+  width:1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.i_item{
+  width:220px;
+  height:270px;
+  margin:25px 40px 0 0;
+}
+.i_item>div{
+  text-align: left;
+}
+.cover>img{
+  width:220px;
+  height:220px;
+  display:block;
+}
+.br8{
+  border-radius: 8px;
+}
+.text-lips{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.name{
+  width:220px;
+  height:35px;
+  line-height: 35px;
+  display: block;
+  font-size:15px
+}
+.author{
+  font-size:12px;
+  height:25px;
+  line-height: 13px;
+}
+.author_name{
+  display: inline-block;
+  max-width: 184px;
+  vertical-align: middle;
+}
+.name:hover,.author_name:hover{
+  color:#FFB31A;
+}
+.progr{
+  margin-left:3px;
+  width:16px;
+  height:16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../image/level_icon.png) no-repeat;
+}
+/* 笔记 */
+.headicon{
+  width:22px;
+  height:22px;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right:5px;
+}
+/* 左边 */
+#i_left{
+  width:690px;
+  float: left;
+}
+/* 热门食材 */
+.material-list{
+  width:690px;
+  height:276px;
+  background: #F1F7FA;
+  margin-top:20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+.m_item{
+  margin:20px 17px 0;
+  text-align: center;
+  overflow: hidden;
+  font-size:13px;
+  width: 80px;
+  height: 104px;
+}
+.m_item a:hover{
+  color:#FFB31A;
+}
+.mt{
+  margin-top:0;
+}
+.m_item img{
+  width:80px;
+  height:80px;
+  display:block;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+/* 精彩主题文章 */
+.article{
+  text-align:left;
+}
+.hot_article{
+  height:112px;
+  margin:20px 0 30px;
+}
+.a_cover img{
+  width:200px;
+  height:112px;
+  vertical-align: top;
+  border-radius: 8px;
+}
+.hot_article .info{
+  width:478px;
+  height: 112px;
+  margin:3px 0 0 12px;
+  display: inline-block;
+}
+.info .a_name{
+  font-size:16px;
+  line-height: 40px;
+  height: 85px;
+  display: inline-block;
+}
+.info .a_name:hover{
+  color:#FFB31A;
+}
+.info>span{
+  font-size:13px;
+  color: #333;
+}
+.info>span>a:hover{
+  color:#FFB31A;
+}
+.source{
+  margin-right:40px;
+}
+.alist{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.alist li{
+  width:320px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 16px;
+  font-size: 13px;
+  margin:10px;
+}
+.alist li a:hover{
+  color:#FFB31A;
+}
+.alist li b{
+  margin-right:5px;
+}
+/* 大家的作品 */
+.zp_list{
+  margin-top:25px;
+}
+.zp_list li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.zp_left{
+  width:305px;
+  display: flex;
+  justify-content: space-between;
+}
+.zp_left img,.zp_right img{
+  width:110px;
+  height:110px;
+  vertical-align: middle;
+}
+.zpinfo{
+  text-align: left;
+  padding-top:26px;
+}
+.zpinfo>span{
+  height:40px;
+  display: inline-block;
+}
+.zpinfo:hover{
+  color:#FFB31A;
+}
+.zp_right img{
+  margin-left:15px;
+  border-radius: 8px;
+}
+/* 右边 */
+#i_right{
+  width:280px;
+  float: right;
+}
+/* 广告 */
+.ad{
+  width:280px;
+  margin-top:40px;
+  text-align: left;
+  border:1px solid #fff;
+}
+.ad:hover{
+  border:1px solid #ddd;
+}
+.ad a{
+  font-size:18px;
+}
+/* 达人 */
+.dr_list li{
+  display: flex;
+  justify-content: space-between;
+  margin-top:25px;
+  height:46px;
+}
+.dr_headicon{
+  width:46px;
+  height:46px;
+  vertical-align: top;
+}
+.dr_info{
+  display: inline-block;
+  text-align: left;
+  margin-left: 5px;
+}
+.dr_info>a:hover{
+  color:#FFB31A;
+}
+.dr_info a:first-child{
+  font-size:15px;
+}
+.dr_info p{
+  font-size:12px;
+  color:#999;
+  margin-top:6px;
+}
+.gz{
+  width:73px;
+  height:30px;
+  line-height: 30px;
+  display: block;
+  border:1px solid #333;
+  border-radius: 5px;
+  margin-top:8px;
+  font-size:12px;
+}
+.gz span{
+  font-size:14px;
+}
+/* 商城精选 */
+.mall_list{
+  width:280px;
+  height:324px;
+  margin-top:5px;
+}
+.mall_list img{
+  vertical-align: top;
+  width:88px;
+  height:88px;
+  border-radius: 5px;
+}
+.mall_list li{
+  margin-top:25px;
+  height:88px;
+}
+.ma_info{
+  width:186px;
+  text-align: left;
+  margin-left: 6px;
+  display: inline-block;
+}
+.ma_info>a{
+  height:40px;
+  display: inline-block;
+  font-size:15px;
+  line-height: 20px;
+}
+.ma_info>a:hover{
+  color:#FFB31A;
+}
+.ma_info .ma_price{
+  font-size:16px;
+  color:#FF4C44;
+  margin-top:4px;
+}
+.ma_info>p:last-child{
+  font-size:12px;
+  color:#999;
+  margin-top:7px;
+}
+/* 豆果实验室 */
+.dg_list li{
+  text-align: left;
+  margin-top:25px;
+}
+.dg_list li b{
+  margin-right:5px;
+}
+.dg_list li a:hover{
+  color:#FFB31A;
+}
